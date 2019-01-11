@@ -13,61 +13,73 @@ For this application to work you need NodeJS, please use NVM!
 
 ### Prerequisites
 
-To run the application, you first need to install NodeJS (version 10.0 or above)
-
-If you are using Linux, first download nvm from: [https://github.com/creationix/nvm]
-
-Then you need to install nodejs running nvm install 10
-
-To run the mongodb instance we will use docker, we would add instructions later
+You can run this application in any OS, it just need NodeJS and MongoDB to start.
 
 ### Installing
 
-A step by step series of examples that tell you how to get a development env running
+Fist install NodeJS (version 10 or above), preferably use NVM, download then from here:
 
-Say what the step will be
+* [Windows](https://github.com/coreybutler/nvm-windows) - Download NVM for Windows
 
-```
-Give the example
-```
+* [Linux](https://github.com/creationix/nvm) - Download NVM for Linux
 
-And repeat
+After installing NVM, install node:
 
 ```
-until finished
+nvm install 10
 ```
 
-End with an example of getting some data out of the system or using it for a little demo
+Then install typescript and node support globally
+
+```
+npm install -g ts-node typescript
+
+```
+
+After that install all the dependencies
+...
+npm install
+...
+
+And finally you can run the application with
+
+...
+npm run dev
+...
 
 ## Running the tests
 
-Explain how to run the automated tests for this system
+To be defined
 
 ### Break down into end to end tests
 
-Explain what these tests test and why
+To be defined
 
-```
-Give an example
-```
+### Coding style
 
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
+To develop this application we are using [AirBnB Coding style] (https://github.com/airbnb/javascript) 
 
 ## Deployment
 
-Add additional notes about how to deploy this on a live system
+To deploy this application, we use docker to build or image:
+
+...
+docker image build
+...
+
+And run the image with
+
+...
+docker run -p 3000:3000 aquien-voto-backend
+...
 
 ## Built With
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
+* [NodeJS](http://nodejs.org/) - As our main platform
+* [Express](https://expressjs.com/) - Our route / api middleware to handle request
+* [TypeScript](https://www.typescriptlang.org/) - A supercharged tool to use with Javascript
+* [MongoDB](https://www.mongodb.com/) - A NoSQL database to store our data
+* [Mongoose](https://mongoosejs.com/) - An Object Document Mapper (ODM) for MongoDB
 
 ## Contributing
 
@@ -76,19 +88,3 @@ Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c6
 ## Versioning
 
 We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
-
-## Authors
-
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
-## Acknowledgments
-
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
