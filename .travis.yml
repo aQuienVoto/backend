@@ -6,4 +6,4 @@ before_install:
 - npm install -g typescript ts-node
 - npm install
 script:
-- npm run dev
+- npm run build
