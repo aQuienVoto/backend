@@ -82,6 +82,9 @@ docker run -p 3000:3000 aquien-voto-backend
 * [MongoDB](https://www.mongodb.com/) - A NoSQL database to store our data
 * [Mongoose](https://mongoosejs.com/) - An Object Document Mapper (ODM) for MongoDB
 
+## Build Status
+[![Build Status](https://travis-ci.org/aQuienVoto/backend.svg?branch=master)](https://travis-ci.org/aQuienVoto/backend)
+
 ## Contributing
 
 Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
