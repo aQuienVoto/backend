@@ -1,4 +1,4 @@
-# Project Title
+# AQuienVoto - Backend
 
 The implementation of A Quien Voto Backend application, written in 
 * Javascript
@@ -37,15 +37,16 @@ npm install -g ts-node typescript
 ```
 
 After that install all the dependencies
-...
+
+```
 npm install
-...
+```
 
 And finally you can run the application with
 
-...
+```
 npm run dev
-...
+```
 
 ## Running the tests
 
@@ -57,21 +58,21 @@ To be defined
 
 ### Coding style
 
-To develop this application we are using [AirBnB Coding style] (https://github.com/airbnb/javascript) 
+To develop this application we are using AirBnB Coding style (https://github.com/airbnb/javascript) 
 
 ## Deployment
 
 To deploy this application, we use docker to build or image:
 
-...
+```
 docker image build
-...
+```
 
 And run the image with
 
-...
+```
 docker run -p 3000:3000 aquien-voto-backend
-...
+```
 
 ## Built With
 
