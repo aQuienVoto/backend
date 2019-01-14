@@ -15,7 +15,8 @@ export const UserSchema = new Schema({
         type: String            
     },
     password: {
-        type: String
+        type: String,
+        unique: true
     },
     created_date: {
         type: Date,
