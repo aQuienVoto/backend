@@ -1,9 +1,15 @@
 import { Route } from "./router.interface";
 import { Request, Response } from "express";
-
+import { UserController } from "../controllers/user.controller";
 import express = require("express");
 
 export class UserRoutes implements Route {
+  ctrl: UserController;
+
+  constructor() {
+    this.ctrl = new UserController();
+  }
+
   applyRoutes(app: express.Application): void {
     const USER_ROUTE: string = "/users";
     //GET
@@ -14,10 +20,8 @@ export class UserRoutes implements Route {
     });
 
     //POST
-    app.route(USER_ROUTE).post((req: Request, res: Response) => {
-      res.status(200).send({
-        message: "POST request to the user entity successfull"
-      });
+    app.route(USER_ROUTE).put((req: Request, res: Response) => {
+      this.ctrl.addUser(req, res);
     });
   }
 }
