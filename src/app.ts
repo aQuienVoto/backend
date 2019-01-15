@@ -4,14 +4,13 @@ import * as mongoose from "mongoose";
 
 import { Routes } from "./routes/app.routes";
 
-
 /**
  * This class is the backend application
  */
 class App {
   public app: express.Application;
   private routePrv: Routes = new Routes();
-  private mongoUrl: string = 'mongodb://localhost/aQuienVoto';  
+  private mongoUrl: string = "mongodb://localhost/aQuienVoto";
 
   constructor() {
     this.app = express();
@@ -33,10 +32,14 @@ class App {
     this.mongoSetup();
   }
 
-  private mongoSetup(): void{
+  private mongoSetup(): void {
     mongoose.Promise = global.Promise;
-    mongoose.connect(this.mongoUrl);    
-}
+    mongoose.connect(
+      this.mongoUrl,
+      { useNewUrlParser: true }
+    );
+    mongoose.set('useCreateIndex', true);
+  }
 }
 
 export default new App().app;
