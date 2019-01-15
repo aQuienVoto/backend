@@ -1,15 +1,14 @@
 # AQuienVoto - Backend
 
-The implementation of A Quien Voto Backend application, written in 
-* Javascript
-* Typescript
-* Mongoose 
-* Express
+The implementation of A Quien Voto Backend application, written in
+*   Javascript
+*   Typescript
+*   Mongoose 
+*   Express
 
 ## Getting Started
 
 For this application to work you need NodeJS, please use NVM!
-
 
 ### Prerequisites
 
@@ -84,6 +83,9 @@ docker run -p 3000:3000 aquien-voto-backend
 
 ## Build Status
 [![Build Status](https://travis-ci.org/aQuienVoto/backend.svg?branch=master)](https://travis-ci.org/aQuienVoto/backend)
+
+## Reviewed With
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/c97bdc97e26d4f25b861bec0f9a100a6)](https://www.codacy.com/app/nestorgf/backend?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=aQuienVoto/backend&amp;utm_campaign=Badge_Grade)
 
 ## Contributing
 
