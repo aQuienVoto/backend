@@ -54,7 +54,6 @@ export class Routes {
           // See if key mathches the app who is calling
           let apiKey: ApiKey = this.appConfig.validateKey(req.header('apiKey'));
           if (apiKey) { 
-            console.log("interceptor");
             next();
           } else {
             res.status(401).send("Access forbidden");
