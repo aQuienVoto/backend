@@ -53,7 +53,7 @@ export class Routes {
         if (req.header('apiKey')) {
           // See if key mathches the app who is calling
           let apiKey: ApiKey = this.appConfig.validateKey(req.header('apiKey'));
-          if (apiKey) {
+          if (apiKey) { 
             console.log("interceptor");
             next();
           } else {
