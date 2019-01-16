@@ -7,7 +7,8 @@
     "build": "tsc",
     "dev": "ts-node ./src/server.ts",
     "start": "nodemon ./dist/server.js",
-    "prod": "npm run build && npm run start"
+    "prod": "npm run build && npm run start",
+    "test": "mocha -r ts-node/register src/**/*.spec.ts --exit"
   },
   "keywords": [
     "aQuienvoto"
@@ -15,10 +16,20 @@
   "author": "aQuienVotoTeam",
   "license": "ISC",
   "dependencies": {
-    "@types/express": "^4.16.0",
     "body-parser": "^1.18.3",
-    "express": "^4.16.4",
+    "express": "^4.16.0",
+    "@types/express": "^4.16.0",
     "mongoose": "^5.4.3",
     "nodemon": "^1.18.9"
+  },
+  "devDependencies": {
+    "@types/chai-http": "^3.0.5",
+    "chai-http": "^4.2.1",
+    "mocha": "^5.2.0",
+    "@types/mocha": "^5.2.5",
+    "chai": "^4.2.0",
+    "@types/chai": "4.1.7",
+    "ts-node": "^7.0.1",
+    "typescript": "^3.2.2"
   }
 }
