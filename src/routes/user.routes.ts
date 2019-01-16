@@ -11,7 +11,7 @@ export class UserRoutes implements Route {
   }
 
   applyRoutes(app: express.Application): void {
-    const USER_ROUTE: string = "/users";
+    const USER_ROUTE: string = "/api/users";
     //GET
     app.route(USER_ROUTE).get((req: Request, res: Response) => {
       res.status(200).send({
